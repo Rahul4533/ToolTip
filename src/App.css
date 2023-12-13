@@ -1,38 +1,54 @@
-.App {
+.main {
+
+  background: linear-gradient(#3498db, #8e44ad);
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  border-radius: 30px;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box{
+
+  width: 250px;
+  height: 100px;
+  margin-left: -10px;
+  background:linear-gradient(red,yellow);
+  font-size: large;
+  border-radius: 30px;
+  
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tooltip {
+  position: absolute;
+  bottom: 125%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+  white-space: nowrap;
+  z-index: 1;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip-container {
+  position: relative;
+  display: inline-block;
 }
